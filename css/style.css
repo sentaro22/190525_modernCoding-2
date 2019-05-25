@@ -36,6 +36,51 @@ a:link, a:visited, a:hover, a:active {
   letter-spacing: 1px;
   font-family: "Trebuchet MS", "Hiragino kaku Gothic ProN", "Meiryo", "sans-serif";
 }
+.item .category::before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  border: 2px solid;
+  border-radius: 50%;
+  vertical-align: -5px;
+}
+.item .description {
+  margin: 10px;
+  line-height: 1.5;
+}
+.item > a {
+  margin: -8px -8px -11px;
+  padding: 8px 8px 11px;
+  display: block;
+  border-radius: inherit;
+  color: #777;
+  transition: all 0.3s;
+}
+.item > a:hover {
+  box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+}
+.item-maindish,
+.item-maindish .category::before {
+  border-color: #ffc0cb;
+}
+.item-appetizer,
+.item-appetizer .category::before {
+  border-color: #76c047;
+}
+.item-column,
+.item-column .category::before {
+  border-color: #fff100;
+}
+.item-breaktime,
+.item-breaktime .category::before {
+  border-color: #c1efff;
+}
+
+
+
 
 
 
